@@ -13,6 +13,7 @@ function Bestseller() {
   const dataPrt = [
     {
       img: product1type1,
+      img2: product1type2,
       title: "blazer",
       disc: "Slim fit blazer made of premium linen blend",
       price: "$89.00",
@@ -20,6 +21,7 @@ function Bestseller() {
 
     {
       img: product2type1,
+      img2: product2type2,
       title: "blazer",
       disc: "Slim fit blazer made of premium linen blend",
       price: "$89.00",
@@ -27,31 +29,32 @@ function Bestseller() {
 
     {
       img: product3type1,
+      img2: product3type2,
       title: "blazer",
       disc: "Slim fit blazer made of premium linen blend",
       price: "$89.00",
     },
   ];
-  const dataHoverProduct = [
-    {
-      img: product1type2,
-      title: "blazer",
-      disc: "Slim fit blazer made of premium linen blend",
-      price: "$89.00",
-    },
-    {
-      img: product2type2,
-      title: "blazer",
-      disc: "Slim fit blazer made of premium linen blend",
-      price: "$89.00",
-    },
-    {
-      img: product3type2,
-      title: "blazer",
-      disc: "Slim fit blazer made of premium linen blend",
-      price: "$89.00",
-    },
-  ];
+  // const dataHoverProduct = [
+  //   {
+      
+  //     title: "blazer",
+  //     disc: "Slim fit blazer made of premium linen blend",
+  //     price: "$89.00",
+  //   },
+  //   {
+      
+  //     title: "blazer",
+  //     disc: "Slim fit blazer made of premium linen blend",
+  //     price: "$89.00",
+  //   },
+  //   {
+  //     img: product3type2,
+  //     title: "blazer",
+  //     disc: "Slim fit blazer made of premium linen blend",
+  //     price: "$89.00",
+  //   },
+  // ];
   const [hover, setHover] = useState(false);
 
   return (
@@ -62,12 +65,12 @@ function Bestseller() {
           <div className="bg-gray-200 flex flex-col gap-2.5 h-[350px] w-[250px] rounded-lg justify-center items-center p-7.5 shadow-[1px_5px_20px_0px_#0B0B0B]">
             <img
               onMouseEnter={() => {hover?setHover(false):setHover(true)}}
-              style={
-                hover ? { opacity:'0', } : {  }
-              }
+              // style={
+              //   hover ? { opacity:'0', } : {  }
+              // } 
               onMouseLeave={() => {hover?setHover(false):setHover(true)}}
               className="h-[100PX]"
-              src={el.img}
+              src={hover?el.img2:el.img}
             ></img>
             <div className="text-center">
               <div className="font-medium leading-[23.74px]">{el.title}</div>
