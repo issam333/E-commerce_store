@@ -7,8 +7,9 @@ import acc4 from "../images/acc-4.png";
 import bougie from "../images/bougie-3.png";
 const About = () => {
   return (
-    <div className="bg-white py-10">
+    <div className=" bg-white py-10">
       <div className="w-[90%] mx-auto">
+        {/* part about us */}
         <h2 className="text-[48px] mb-4 font-bold">abut us</h2>
         <div className="flex flex-col lg:flex-row gap-12">
           <img src={img} className="w-full h-full" alt="image" />
@@ -21,36 +22,54 @@ const About = () => {
             and use as signifier of identity and community.
           </p>
         </div>
+
+        {/* part accessiors */}
+
         <h2 className="text-[48px] mt-10 mb-4 font-bold">accessisors</h2>
-        <div className="grid grid-cols-1 items-center justify-center  gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <div className="relative group hover:scale-110 duration-700 transition-all">
-            <img className="h-[330px] w-full sm:w-[300px]" src={acc1} />
-            <div className="absolute translate-y-full transition-all duration-700 opacity-0 group-hover:translate-y-5 group-hover:opacity-100 bottom-20 left-[30%] sm:left-[22%] rounded-md backdrop-blur-lg bg-white/20 px-16 text-white py-3">
+        <div className="md:grid flex flex-wrap  grid-cols-1 items-center justify-center  gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="h-max-[350px] md:w-[230px] w-[250px] relative flex justify-center rounded-[10px] group overflow-hidden">
+            <img
+              className="h-[330px] w-full group-hover:scale-110 group-hover:blur-[2px] duration-700 transition-all sm:w-[300px] "
+              src={acc1}
+            />
+            <button className="absolute translate-y-full transition-all duration-700 opacity-0 group-hover:translate-y-5  group-hover:opacity-100 bottom-20 rounded-md backdrop-blur-lg bg-white/20 px-16 text-white py-3">
               <h2>Scarf</h2>
-            </div>
+            </button>
           </div>
 
-          <div className="relative group hover:scale-110 duration-700 transition-all">
-            <img className="h-[330px] w-full sm:w-[300px]" src={acc3} />
-            <div className="absolute translate-y-full transition-all duration-700 opacity-0 group-hover:translate-y-5 group-hover:opacity-100 bottom-20 left-[30%] sm:left-[22%] rounded-md backdrop-blur-lg bg-white/20 px-16 text-white py-3">
+          <div className="h-[330px] md:w-[230px] w-[250px] relative flex justify-center rounded-[10px] group overflow-hidden">
+            <img
+              className="h-[380px] w-full group-hover:scale-110 group-hover:blur-[2px] duration-700 transition-all "
+              src={acc2}
+            />
+            <button className="absolute translate-y-full transition-all duration-700 opacity-0 group-hover:translate-y-5  group-hover:opacity-100 bottom-20 rounded-md backdrop-blur-lg bg-white/20 px-16 text-white py-3">
               <h2>Scarf</h2>
-            </div>
+            </button>
           </div>
-          <div className="relative group hover:scale-110 duration-700 transition-all">
-            <img className="h-[330px] w-full sm:w-[300px]" src={acc4} />
-            <div className="absolute translate-y-full transition-all duration-700 opacity-0 group-hover:translate-y-5 group-hover:opacity-100 bottom-20 left-[30%] sm:left-[22%] rounded-md backdrop-blur-lg bg-white/20 px-16 text-white py-3">
+
+          <div className="h-max-[350px] md:w-[230px] w-[250px] relative flex justify-center rounded-[10px] group overflow-hidden">
+            <img
+              className="h-[330px] w-full group-hover:scale-110 group-hover:blur-[2px] duration-700 transition-all sm:w-[300px]"
+              src={acc3}
+            />
+            <button className="absolute translate-y-full transition-all duration-700 opacity-0 group-hover:translate-y-5  group-hover:opacity-100 bottom-20 rounded-md backdrop-blur-lg bg-white/20 px-16 text-white py-3">
               <h2>Scarf</h2>
-            </div>
+            </button>
           </div>
-          <div className="relative  group hover:scale-110 duration-700 transition-all">
-            <img className="h-[360px] w-full sm:w-[300px]" src={acc2} />
-            <div className="absolute translate-y-full transition-all duration-700 opacity-0 group-hover:translate-y-5 group-hover:opacity-100 bottom-20 left-[30%] sm:left-[22%] rounded-md backdrop-blur-lg bg-white/20 px-16 text-white py-3">
+
+          <div className="h-max-[350px] md:w-[230px] w-[250px] relative flex justify-center rounded-[10px] group overflow-hidden">
+            <img
+              className="h-[330px] w-full group-hover:scale-110 group-hover:blur-[2px] duration-700 transition-all sm:w-[300px]"
+              src={acc4}
+            />
+            <button className="absolute translate-y-full transition-all duration-700 opacity-0 group-hover:translate-y-5  group-hover:opacity-100 bottom-20 rounded-md backdrop-blur-lg bg-white/20 px-16 text-white py-3">
               <h2>Scarf</h2>
-            </div>
+            </button>
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-l h-full  flex flex-col sm:flex-row items-center justify-between from-[#D8C5B9] to-[#726862] sm:h-[500px]">
+
+      <div className="mt-[50px] bg-gradient-to-l h-full  flex flex-col sm:flex-row items-center justify-between from-[#D8C5B9] to-[#726862] sm:h-[500px]">
         <div className="pl-[5%]">
           <h2 className="text-[64px] uppercase">explore unique</h2>
           <p className="text-[32px] text-white">
