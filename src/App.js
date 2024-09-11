@@ -1,21 +1,17 @@
 import "./App.css";
-
-import BestsellerAndContactUs from "./pages/bestsellerAndContactUs";
 import HomePage from "./pages/HomePage";
-import LoginAndSingUp from "./pages/LoginAndSingUp";
-import Login from "./components/Login";
-import SingUp from "./components/SingUp";
+import Login from "./pages/Login";
+import SingIn from "./pages/SingIn";
 import { BrowserRouter, Route, Routes, Router } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <HomePage />
-      <BestsellerAndContactUs />
-      <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/SingUp" element={<SingUp />} />
-      </Router>
+        <Route path="/SingIn" element={<SingIn names={'issam'} />} />
+      </Routes>
     </div>
   );
 }

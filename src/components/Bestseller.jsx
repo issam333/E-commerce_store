@@ -46,14 +46,14 @@ function Bestseller() {
             onMouseLeave={() => setHoverIndex(null)}
           >
             <img
-              className={` h-[100PX] transition-opacity duration-[0.5s] ease-in-out ${
+              className={` h-[100PX] transition-opacity duration-[1s] ease-in-out ${
                 hoverIndex === index ? "opacity-0" : "opacity-100"
               }`}
               src={el.img}
               alt={el.title}
             />
             <img
-              className={`mb-[100px] h-[100PX] transition-opacity duration-[0.5ms] ease-in-out ${
+              className={`mb-[100px] h-[100PX] transition-opacity duration-[1s] ease-in-out ${
                 hoverIndex === index ? "opacity-100" : "opacity-0"
               }`}
               src={el.img2}

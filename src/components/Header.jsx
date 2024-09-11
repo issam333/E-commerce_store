@@ -86,9 +86,9 @@ const Header = () => {
                     Log in
                   </button>
                 </Link>
-                <Link to="/SingUp">
+                <Link to="/SingIn">
                   <button className=" bg-white border border-white px-5 gap-4 text-black rounded-[50px] hover:scale-[1.1] transition-[1s]">
-                    Sign up
+                    Sign in
                   </button>
                 </Link>
               </div>
@@ -134,9 +134,9 @@ const Header = () => {
                   Log in
                 </button>
               </Link>
-              <Link to="/SingUp">
+              <Link to="/SingIn">
                 <button className="bg-white border border-white p-2 px-8 gap-4 text-black rounded-md">
-                  Sign up
+                  Sign in
                 </button>
               </Link>
             </div>
