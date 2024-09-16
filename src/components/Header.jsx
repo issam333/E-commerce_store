@@ -81,14 +81,14 @@ const Header = () => {
                 </li>
               </ul>
               <div className=" lg:mr-[10px] hidden lg:flex gap-4 lg:h-[70%]">
-                <Link to="/Login">
+                <Link to="/Signup">
                   <button className="bg-black border-[1.5px] px-5 gap-4 text-white rounded-[50px] hover:scale-[1.1] transition-[1s]">
-                    Log in
+                    Signup
                   </button>
                 </Link>
                 <Link to="/SingIn">
                   <button className=" bg-white border border-white px-5 gap-4 text-black rounded-[50px] hover:scale-[1.1] transition-[1s]">
-                    Sign in
+                    Signup
                   </button>
                 </Link>
               </div>
@@ -129,9 +129,9 @@ const Header = () => {
               </li>
             </ul>
             <div className="flex justify-center items-center w-full  text-center gap-4">
-              <Link to="/Login">
+              <Link to="/Signup">
                 <button className="bg-black border-[1.5px] p-2 px-8 gap-4 text-white rounded-md ">
-                  Log in
+                  Signup
                 </button>
               </Link>
               <Link to="/SingIn">

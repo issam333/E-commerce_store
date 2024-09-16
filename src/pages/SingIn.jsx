@@ -1,21 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Login from "./Login";
+import Login from "./Signup";
 
-export default function SingUp(props) {
+export default function SingUp() {
   
-
+  
+  
   return (
-    <div>
-      <>
-        {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
-        <div className="bg-black h-[100vh] flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+    <div className="bg-[#191919] h-screen">
+        <div  className="border border-black h-24 shadow-[inset_0px_0px_1000px_10px_black] bg-[#222226] w-[100%]  flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-200">
               Sign in to your account
@@ -95,8 +87,6 @@ export default function SingUp(props) {
             </p>
           </div>
         </div>
-      </>
-      <h1>{props.names}</h1>
     </div>
   );
 }
