@@ -6,6 +6,7 @@ import ContactUs from "../components/ContactUs";
 import Footer from "../components/footer";
 import Product1 from "../components/product1";
 import Product2 from "../components/product2";
+import PartTiger from "../components/partTiger";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <About />
       <Product1 />
       <Product2 />
+      <PartTiger/>
       <Bestseller />
       <ContactUs />
       <Footer />
