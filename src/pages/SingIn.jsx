@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import Login from "./Signup";
+// import React, { useEffect, useState } from "react";
+// import Login from "./Signup";
 
 export default function SingUp() {
   
