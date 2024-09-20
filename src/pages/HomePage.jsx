@@ -7,6 +7,8 @@ import Footer from "../components/footer";
 import Product1 from "../components/product1";
 import Product2 from "../components/product2";
 import PartTiger from "../components/partTiger";
+import ScrollTop from '../components/scrollTop'
+
 
 const HomePage = () => {
   return (
@@ -19,6 +21,7 @@ const HomePage = () => {
       <Bestseller />
       <ContactUs />
       <Footer />
+      <ScrollTop/>
     </div>
   );
 };
